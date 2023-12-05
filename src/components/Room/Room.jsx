@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { databases, DATABASE_ID, COLLECTION_ID_MESSAGES } from '../../appwriteConfig'
-import { ID } from 'appwrite'
-import { useAuth } from '../../auth/authContext'
+import React, { useState, useEffect } from 'react';
+import { databases, DATABASE_ID, COLLECTION_ID_MESSAGES } from '../../appwriteConfig';
+import { ID } from 'appwrite';
+import { useAuth } from '../../auth/authContext';
+import './Room.css'
 
 const Room = () => {
     const { user, handleUserLogout } = useAuth();

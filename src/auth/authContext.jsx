@@ -41,6 +41,7 @@ export const AuthProvider = ({ children }) => {
         try {
             await account.deleteSession('current');
             setUser(null);
+            navigate("/");
         } catch (error) {
             console.log(error);
         }
